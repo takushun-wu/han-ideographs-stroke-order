@@ -90,8 +90,8 @@ The sorting of bend strokes can also be summarized in the following table:
             <td><strong>㇑</strong>：㇞㇥㇟(㇃)</td>
         </tr>
         <tr>
-            <td><strong>3</strong>：㇎㇈(㇠)㇋㇌㇉[^1]</td>
-            <td><strong>㇐</strong>：㇎㇈(㇠)㇋㇌</td>
+            <td><strong>3</strong>：㇎㇈㇋㇠㇌㇉[^1]</td>
+            <td><strong>㇐</strong>：㇎㇈㇋㇠㇌</td>
             <td><strong>㇑</strong>：㇉</td>
         </tr>
         <tr>
@@ -118,5 +118,5 @@ Although this project strives to provide accurate and complete data, there may s
 - [GF 0012-2009 Specification for Identifying Indexing Components of GB 13000.1 Chinese Characters Set (in Chinese)](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/200901/t20090102_186104.html)
 - [GB/T 25741-2010 Information technology - Chinese ideograms coded character set - Radical order and stroke order of Chinese ideograms (in Chinese)](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DB34CB2C5C377E35E3766A543724B767)
 
-[^1] The order in GF 2001-2001 should be ㇎<strong>㇋㇈(㇠)</strong>㇌㇉, while URO (GF 0012-2009) and the _Stroke Orders of TGH_ (GF 0023-2020) have it as ㇎<strong>㇈(㇠)㇋</strong>㇌㇉ (because **凡<及**, and the second stroke of "㇋" is actually displayed as "㇒"), so this project adopts the latter order.
+[^1] The order in GF 2001-2001 should be ㇎<strong>㇋㇈(㇠)</strong>㇌㇉, while URO (GF 0012-2009) and the _Stroke Orders of TGH_ (GF 0023-2020) have it as ㇎<strong>㇈㇋㇠</strong>㇌㇉ (because **凡<及**, and the second stroke of "㇋㇠" is actually displayed as "㇒"), so this project adopts the latter order.
 
