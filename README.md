@@ -89,7 +89,7 @@
             <td><strong>㇑</strong>：㇞㇥㇟(㇃)</td>
         </tr>
         <tr>
-            <td><strong>3</strong>：㇎㇈㇋㇠㇌㇉[^1]</td>
+            <td><strong>3</strong>：㇎㇈㇋㇠㇌㇉<sup><a href="#fn1" id="ref1">[1]</a></sup></td>
             <td><strong>㇐</strong>：㇎㇈㇋㇠㇌</td>
             <td><strong>㇑</strong>：㇉</td>
         </tr>
@@ -118,4 +118,8 @@
 - [GF 0012-2009《GB 13000.1字符集汉字部首归部规范》](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/200901/t20090102_186104.html)
 - [GB/T 25741-2010《信息技术 汉字编码字符集 汉字部首序和笔顺序》](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DB34CB2C5C377E35E3766A543724B767)
 
-[^1] GF 2001-2001中的顺序应为㇎<strong>㇋㇈(㇠)</strong>㇌㇉，而URO（GF 0012-2009）和《通用规范汉字笔顺规范》（GF 0023-2020）却为㇎<strong>㇈㇋㇠</strong>㇌㇉（因为**凡<及**，且“㇋㇠”的第二分笔画实际显示为“㇒”），因此本项目采用后者的顺序。
+<div class="footnotes">
+    <ol>
+        <li id="fn1">GF 2001-2001中的顺序应为㇎<strong>㇋㇈(㇠)</strong>㇌㇉，而URO（GF 0012-2009）和《通用规范汉字笔顺规范》（GF 0023-2020）却为㇎<strong>㇈㇋㇠</strong>㇌㇉（因为<strong>凡&lt;及</strong>，且“㇋㇠”的第二分笔画实际显示为“㇒”），因此本项目采用后者的顺序。</li>
+    </ol>
+</div>
