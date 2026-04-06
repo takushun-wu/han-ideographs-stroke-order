@@ -116,7 +116,10 @@ Although this project strives to provide accurate and complete data, there may s
 - [GF 3003-1999《GB 13000.1字符集汉字字序（笔画序）规范》(in Chinese)](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201001/W020150902458280061291.pdf)
 - [GF 2001-2001 Chinese Character Turning Stroke Standard of GB 13000.1 Character Set (in Chinese)](http://www.moe.gov.cn/ewebeditor/uploadfile/2015/01/12/20150112170016626.pdf)
 - [GF 0012-2009 Specification for Identifying Indexing Components of GB 13000.1 Chinese Characters Set (in Chinese)](http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/200901/t20090102_186104.html)
+### Data Verification References
 - [GB/T 25741-2010 Information technology - Chinese ideograms coded character set - Radical order and stroke order of Chinese ideograms (in Chinese)](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=DB34CB2C5C377E35E3766A543724B767)
+- [GitHub: YQ-YSY/stroke-seq_MB/单字码表/单字_笔顺码_20988个.txt](https://github.com/YQ-YSY/stroke-seq_MB/blob/master/%E5%8D%95%E5%AD%97%E7%A0%81%E8%A1%A8/%E5%8D%95%E5%AD%97_%E7%AC%94%E9%A1%BA%E7%A0%81_20988%E4%B8%AA.txt)
+- [GitHub: rime/rime-stroke/stroke.dict.yaml](https://github.com/rime/rime-stroke/blob/master/stroke.dict.yaml)
 
 <div class="footnotes">
     <ol>
