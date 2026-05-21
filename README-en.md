@@ -9,24 +9,31 @@ This project provides a database containing stroke order information for Han ide
 
 ## Specification Parameters
 ### Han Character Range
-| Block Name                       | Unicode Range |  Count | Notes |
-|----------------------------------|:----------:|-----:|---|
-|CJK Radicals Supplement           | 2E80..2EFF |   115||
-|Kangxi Radicals                   | 2F00..2FFF |   214||
-|CJK Symbols and Punctuation       | 3000..303F |     1|〇|
-|CJK Unified Ideographs Extension A| 3400..4DBF | 6,592||
-|CJK Unified Ideographs            | 4E00..9FFF |20,992||
-|CJK Compatibility Ideographs      | F900..FAFF |    21|GBK defined non-compatible and duplicate ideographs|
-|CJK Unified Ideographs Extension B|20000..2A6DF|    46|_TGH_, GBK and Adobe-GB1 radicals|
-|CJK Unified Ideographs Extension C|2A700..2B73F|    44|_TGH_|
-|CJK Unified Ideographs Extension D|2B740..2B81F|     8|ditto|
-|CJK Unified Ideographs Extension E|2B820..2CEAF|   108|ditto|
-|                                  |    **Total**|**28,141**||
+|Block Name                             |Unicode Range|Count|Notes|
+|---------------------------------------|:----------:|-----:|---|
+|CJK Radicals Supplement                | 2E80..2EFF |   115||
+|Kangxi Radicals                        | 2F00..2FFF |   214||
+|CJK Symbols and Punctuation            | 3000..303F |     1|〇|
+|CJK Unified Ideographs Extension A     | 3400..4DBF | 6,592||
+|CJK Unified Ideographs                 | 4E00..9FFF |20,992||
+|CJK Compatibility Ideographs           | F900..FAFF |    23|GBK defined non-compatible and duplicate ideographs, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension B     |20000..2A6DF|   585|_TGH_, GBK and Adobe-GB1 radicals, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension C     |2A700..2B73F|   152|_TGH_, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension D     |2B740..2B81F|    17|ditto|
+|CJK Unified Ideographs Extension E     |2B820..2CEAF|   243|ditto|
+|CJK Unified Ideographs Extension F     |2CEB0..2EBEF|    80|Extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension I     |2EBF0..2EE5F|     6|ditto|
+|CJK Compatibility Ideographs Supplement|2F800..2FA1F|     2|ditto|
+|CJK Unified Ideographs Extension G     |30000..3134F|    75|ditto|
+|CJK Unified Ideographs Extension H     |31350..323AF|    23|ditto|
+|CJK Unified Ideographs Extension J     |323B0..3347F|    13|ditto|
+|Ideographic Variations Sequences       |            |     6|ditto|
+|                                       |    **Total**|**29,134**||
 
 ### Reference Fonts
 Given that different regular fonts have minor glyph differences, this project uses the following two sources of font glyphs as references:
 
-- **Primary**: [WenYuan Serif SC v0.904](https://github.com/takushun-wu/WenYuanFonts) [glyphs follow the definition in the _General Standard Chinese Characters Table (aka TGH)_]
+- **Primary**: [WenYuan Serif SC v0.905](https://github.com/takushun-wu/WenYuanFonts) [glyphs follow the definition in the _General Standard Chinese Characters Table (aka TGH)_]
 - **Secondary**: [GB/T 22321.1-2025 Information technology - Chinese coded character set - 48 dot matrix font of Chinese ideogram - Part 1: Song ti (in Chinese)](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=421B9135604C56A2EA1C4396A941CFB4) defined glyphs (hereafter referred to as _GB Glyphs_)
 
 ### Data Format
@@ -42,24 +49,24 @@ The database is stored in TSV (Tab-Separated Values) format, with each row conta
 
 ## Sorting Criteria
 To compare the stroke orders of two Han ideographs, the following steps are taken in sequence until a difference is found, allowing the order to be determined:
-1. **Number of Strokes**: A character with fewer strokes comes before a character with more strokes, e.g., $二(2)<王(4)$;
-2. **Stroke Sequence**: The five major stroke types (horizontal ㇐, vertical ㇑, throw ㇒, dot ㇔, bend ㇖) are encoded using 12345 respectively and arranged in ascending order, e.g., $二(11)<十(12)$;
+1. **Number of Strokes**: A character with fewer strokes comes before a character with more strokes, e.g., 二(2)<王(4);
+2. **Stroke Sequence**: The five major stroke types (horizontal ㇐, vertical ㇑, throw ㇒, dot ㇔, bend ㇖) are encoded using 12345 respectively and arranged in ascending order, e.g., 二(11)<十(12);
 3. **Primary and Secondary Stroke Forms**
-    1. **Horizontal, Vertical, Dot**: ㇐<㇀，㇑<㇚，㇔<㇏<乁<㇝，e.g., $干(㇑)<于(㇚)$
+    1. **Horizontal, Vertical, Dot**: ㇐<㇀，㇑<㇚，㇔<㇏<乁<㇝，e.g., 干(㇑)<于(㇚)
     2. **Bend Strokes**
-        1. **Number of Bend Points**: Ascending order of the number of bend points, e.g., $㔔(0)<㔖(1)<乫(3)$
-        2. **Stroke Forms within Bend Strokes**: Compare the stroke forms before and after the bend point in the order of horizontal, vertical, throw, dot, e.g., $幻(㇆)<乣(㇟)$
-        3. **Types of Bend Points**: Bend < Curve < Hook, e.g., $㇗<㇄<㇙$
+        1. **Number of Bend Points**: Ascending order of the number of bend points, e.g., 㔔(0)<㔖(1)<乫(3)
+        2. **Stroke Forms within Bend Strokes**: Compare the stroke forms before and after the bend point in the order of horizontal, vertical, throw, dot, e.g., 幻(㇆)<乣(㇟)
+        3. **Types of Bend Points**: Bend < Curve < Hook, e.g., ㇗<㇄<㇙
 4. **Stroke Combination Relationships**
-    1. **Positional Relationships**: Separate < Connected < Intersecting, e.g., $八<人<乂$
-    2. **Connection Methods**: Head-to-head < Head-to-tail < Tail-to-tail < Body, e.g., $目<且$
-    3. **Strokes Connected to the Body**: Compare the connected strokes in the order of horizontal, vertical, throw, dot, bend, e.g., $人(㇒)<入(㇔)$
-    4. **Separation Situations**: Upper separation < Lower separation, Left-right separation < Up-down separation, e.g., $玊<玉,埒<埓$
-    5. **Stroke Length Ratios**: Short-long < Long-short, e.g., $未<末$
+    1. **Positional Relationships**: Separate < Connected < Intersecting, e.g., 八<人<乂
+    2. **Connection Methods**: Head-to-head < Head-to-tail < Tail-to-tail < Body, e.g., 目<且
+    3. **Strokes Connected to the Body**: Compare the connected strokes in the order of horizontal, vertical, throw, dot, bend, e.g., 人(㇒)<入(㇔)
+    4. **Separation Situations**: Upper separation < Lower separation, Left-right separation < Up-down separation, e.g., 玊<玉,埒<埓
+    5. **Stroke Length Ratios**: Short-long < Long-short, e.g., 未<末
 5. **Character Structure**:
-    1. Left-right < Up-down < Enclosing, Left-middle-right < Up-middle-down, e.g., $魂(⿰)<䰟(⿱),囂(⿳)<嚻(⿲),旮(⿱)<旭(⿺)$
-    2. **Overall Character Proportions**: Ascending order, e.g., $口<囗$
-6. Ascending order of Unicode encoding, e.g., $㬵(\texttt{U+3B35})<胶(\texttt{U+80F6})$
+    1. Left-right < Up-down < Enclosing, Left-middle-right < Up-middle-down, e.g., 魂(⿰)<䰟(⿱),囂(⿳)<嚻(⿲),旮(⿱)<旭(⿺)
+    2. **Overall Character Proportions**: Ascending order, e.g., 口<囗
+6. Ascending order of Unicode encoding, e.g., 㬵(U+3B35)<胶(U+80F6)
 
 The sorting of bend strokes can also be summarized in the following table:
 
