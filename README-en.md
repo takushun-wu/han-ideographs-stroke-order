@@ -17,18 +17,18 @@ This project provides a database containing stroke order information for Han ide
 |CJK Unified Ideographs Extension A     | 3400..4DBF | 6,592||
 |CJK Unified Ideographs                 | 4E00..9FFF |20,992||
 |CJK Compatibility Ideographs           | F900..FAFF |    23|GBK defined non-compatible and duplicate ideographs, extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension B     |20000..2A6DF|   585|_TGH_, GBK and Adobe-GB1 radicals, extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension C     |2A700..2B73F|   152|_TGH_, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension B     |20000..2A6DF|   592|_TGH_, GBK and Adobe-GB1 radicals, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension C     |2A700..2B73F|   155|_TGH_, extended G-source ideographs in WenYuan Fonts|
 |CJK Unified Ideographs Extension D     |2B740..2B81F|    17|ditto|
 |CJK Unified Ideographs Extension E     |2B820..2CEAF|   243|ditto|
 |CJK Unified Ideographs Extension F     |2CEB0..2EBEF|    80|Extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension I     |2EBF0..2EE5F|     6|ditto|
+|CJK Unified Ideographs Extension I     |2EBF0..2EE5F|     8|ditto|
 |CJK Compatibility Ideographs Supplement|2F800..2FA1F|     2|ditto|
-|CJK Unified Ideographs Extension G     |30000..3134F|    75|ditto|
-|CJK Unified Ideographs Extension H     |31350..323AF|    23|ditto|
-|CJK Unified Ideographs Extension J     |323B0..3347F|    13|ditto|
+|CJK Unified Ideographs Extension G     |30000..3134F|    78|ditto|
+|CJK Unified Ideographs Extension H     |31350..323AF|    24|ditto|
+|CJK Unified Ideographs Extension J     |323B0..3347F|    14|ditto|
 |Ideographic Variations Sequences       |            |     6|ditto|
-|                                       |    **Total**|**29,134**||
+|                                       |    **Total**|**29,156**||
 
 ### Reference Fonts
 Given that different regular fonts have minor glyph differences, this project uses the following two sources of font glyphs as references:
