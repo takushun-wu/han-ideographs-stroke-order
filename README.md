@@ -1,34 +1,34 @@
 [Click to read English version of readme](README-en.md)
 
 # han-ideographs-stroke-order
-汉字笔画排序数据库 / A database of Han ideographs stroke order
+简体中文汉字笔画排序数据库
 
 ## 简述
-本项目提供了一个包含汉字笔画排序信息的数据库，旨在帮助开发者和研究人员更方便地获取和使用汉字笔画排序数据。数据库中的每个条目包含了汉字的Unicode编码、笔画数量、笔画顺序等信息。
+本项目提供了一个包含简体中文汉字笔画排序信息的数据库，旨在帮助开发者和研究人员更方便地获取和使用汉字笔画排序数据。数据库中的每个条目包含了汉字的Unicode编码、笔画数量、笔画顺序等信息。
 
 
 ## 规格参数
 ### 汉字范围
-|区块名称               |区块名称（英文）                       |Unicode范围 |  数量|备注|
-|-----------------------|---------------------------------------|:----------:|-----:|---|
-|中日韩部首补充         |CJK Radicals Supplement                | 2E80..2EFF |   115||
-|康熙部首               |Kangxi Radicals                        | 2F00..2FFF |   214||
-|中日韩符号和标点       |CJK Symbols and Punctuation            | 3000..303F |     1|〇|
-|中日韩统一表意文字扩展A|CJK Unified Ideographs Extension A     | 3400..4DBF | 6,592||
-|中日韩统一表意文字     |CJK Unified Ideographs                 | 4E00..9FFF |20,992||
-|中日韩兼容表意文字     |CJK Compatibility Ideographs           | F900..FAFF |    23|GBK定义的非兼容汉字及重复字、文渊字体扩展G源字|
-|中日韩统一表意文字扩展B|CJK Unified Ideographs Extension B     |20000..2A6DF|   592|《通用规范汉字表》、GBK与Adobe-GB1部首、文渊字体扩展G源字|
-|中日韩统一表意文字扩展C|CJK Unified Ideographs Extension C     |2A700..2B73F|   155|《通用规范汉字表》、文渊字体扩展G源字|
-|中日韩统一表意文字扩展D|CJK Unified Ideographs Extension D     |2B740..2B81F|    17|同上|
-|中日韩统一表意文字扩展E|CJK Unified Ideographs Extension E     |2B820..2CEAF|   243|同上|
-|中日韩统一表意文字扩展F|CJK Unified Ideographs Extension F     |2CEB0..2EBEF|    80|文渊字体扩展G源字|
-|中日韩统一表意文字扩展I|CJK Unified Ideographs Extension I     |2EBF0..2EE5F|     8|同上|
-|中日韩兼容表意文字扩充 |CJK Compatibility Ideographs Supplement|2F800..2FA1F|    2|同上|
-|中日韩统一表意文字扩展G|CJK Unified Ideographs Extension G     |30000..3134F|    78|同上|
-|中日韩统一表意文字扩展H|CJK Unified Ideographs Extension H     |31350..323AF|    24|同上|
-|中日韩统一表意文字扩展J|CJK Unified Ideographs Extension J     |323B0..3347F|    14|同上|
-|表意文字异体序列       |Ideographic Variations Sequences       |            |     6|同上|
-|                       |                                       |    **共计**|**29,156**||
+|区块名称|区块名称（英文）|Unicode范围|数量|备注|
+|---|---|:---:|---:|---|
+|中日韩部首补充|CJK Radicals Supplement|2E80..2EFF|115||
+|康熙部首|Kangxi Radicals|2F00..2FDF|214||
+|中日韩符号和标点|CJK Symbols and Punctuation|3000..303F|1|〇|
+|中日韩统一表意文字扩展A|CJK Unified Ideographs Extension A|3400..4DBF|6,592||
+|中日韩统一表意文字|CJK Unified Ideographs|4E00..9FFF|20,992||
+|中日韩兼容表意文字|CJK Compatibility Ideographs|F900..FAFF|23|GBK定义的非兼容汉字及重复字、文渊字体扩展G源字|
+|中日韩统一表意文字扩展B|CJK Unified Ideographs Extension B|20000..2A6DF|593|《通用规范汉字表》、GBK与Adobe-GB1部首、文渊字体扩展G源字|
+|中日韩统一表意文字扩展C|CJK Unified Ideographs Extension C|2A700..2B73F|155|《通用规范汉字表》、文渊字体扩展G源字|
+|中日韩统一表意文字扩展D|CJK Unified Ideographs Extension D|2B740..2B81F|17|同上|
+|中日韩统一表意文字扩展E|CJK Unified Ideographs Extension E|2B820..2CEAF|243|同上|
+|中日韩统一表意文字扩展F|CJK Unified Ideographs Extension F|2CEB0..2EBEF|80|文渊字体扩展G源字|
+|中日韩统一表意文字扩展I|CJK Unified Ideographs Extension I|2EBF0..2EE5F|8|同上|
+|中日韩兼容表意文字扩充|CJK Compatibility Ideographs Supplement|2F800..2FA1F|2|同上|
+|中日韩统一表意文字扩展G|CJK Unified Ideographs Extension G|30000..3134F|78|同上|
+|中日韩统一表意文字扩展H|CJK Unified Ideographs Extension H|31350..323AF|24|同上|
+|中日韩统一表意文字扩展J|CJK Unified Ideographs Extension J|323B0..3347F|14|同上|
+|表意文字异体序列|Ideographic Variations Sequences|||6|同上|
+|||**共计**|**29,157**||
 
 ### 参照字体
 鉴于不同正文字体存在少量的字形差异，本项目使用以下两个来源的字体字形作为参照：

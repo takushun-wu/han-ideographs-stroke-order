@@ -1,34 +1,34 @@
 [点击阅读简体中文版说明文件](README.md)
 
 # han-ideographs-stroke-order
-Han Ideographs Stroke Order Database / A database of Han ideographs stroke order
+A database of Simplified Chinese Han ideographs stroke order
 
 ## Overview
-This project provides a database containing stroke order information for Han ideographs, aiming to facilitate developers and researchers in accessing and utilizing stroke order data. Each entry in the database includes the Unicode encoding, number of strokes, and stroke sequence of the corresponding Han character.
+This project provides a database containing stroke order information for Simplified Chinese Han ideographs, aiming to facilitate developers and researchers in accessing and utilizing stroke order data. Each entry in the database includes the Unicode encoding, number of strokes, and stroke sequence of the corresponding Han character.
 
 
 ## Specification Parameters
 ### Han Character Range
-|Block Name                             |Unicode Range|Count|Notes|
-|---------------------------------------|:----------:|-----:|---|
-|CJK Radicals Supplement                | 2E80..2EFF |   115||
-|Kangxi Radicals                        | 2F00..2FFF |   214||
-|CJK Symbols and Punctuation            | 3000..303F |     1|〇|
-|CJK Unified Ideographs Extension A     | 3400..4DBF | 6,592||
-|CJK Unified Ideographs                 | 4E00..9FFF |20,992||
-|CJK Compatibility Ideographs           | F900..FAFF |    23|GBK defined non-compatible and duplicate ideographs, extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension B     |20000..2A6DF|   592|_TGH_, GBK and Adobe-GB1 radicals, extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension C     |2A700..2B73F|   155|_TGH_, extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension D     |2B740..2B81F|    17|ditto|
-|CJK Unified Ideographs Extension E     |2B820..2CEAF|   243|ditto|
-|CJK Unified Ideographs Extension F     |2CEB0..2EBEF|    80|Extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension I     |2EBF0..2EE5F|     8|ditto|
-|CJK Compatibility Ideographs Supplement|2F800..2FA1F|     2|ditto|
-|CJK Unified Ideographs Extension G     |30000..3134F|    78|ditto|
-|CJK Unified Ideographs Extension H     |31350..323AF|    24|ditto|
-|CJK Unified Ideographs Extension J     |323B0..3347F|    14|ditto|
-|Ideographic Variations Sequences       |            |     6|ditto|
-|                                       |    **Total**|**29,156**||
+|Block Name|Unicode Range|Count|Notes|
+|---|:---:|---:|---|
+|CJK Radicals Supplement|2E80..2EFF|115||
+|Kangxi Radicals|2F00..2FDF|214||
+|CJK Symbols and Punctuation|3000..303F|1|〇|
+|CJK Unified Ideographs Extension A|3400..4DBF|6,592||
+|CJK Unified Ideographs|4E00..9FFF|20,992||
+|CJK Compatibility Ideographs|F900..FAFF|23|GBK defined non-compatible and duplicate ideographs, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension B|20000..2A6DF|593|_TGH_, GBK and Adobe-GB1 radicals, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension C|2A700..2B73F|155|_TGH_, extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension D|2B740..2B81F|17|ditto|
+|CJK Unified Ideographs Extension E|2B820..2CEAF|243|ditto|
+|CJK Unified Ideographs Extension F|2CEB0..2EBEF|80|Extended G-source ideographs in WenYuan Fonts|
+|CJK Unified Ideographs Extension I|2EBF0..2EE5F|8|ditto|
+|CJK Compatibility Ideographs Supplement|2F800..2FA1F|2|ditto|
+|CJK Unified Ideographs Extension G|30000..3134F|78|ditto|
+|CJK Unified Ideographs Extension H|31350..323AF|24|ditto|
+|CJK Unified Ideographs Extension J|323B0..3347F|14|ditto|
+|Ideographic Variations Sequences|||6|ditto|
+||**Total**|**29,157**||
 
 ### Reference Fonts
 Given that different regular fonts have minor glyph differences, this project uses the following two sources of font glyphs as references:
