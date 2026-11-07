@@ -22,18 +22,18 @@
 |中日韩统一表意文字扩展D|CJK Unified Ideographs Extension D|2B740..2B81F|17|同上|
 |中日韩统一表意文字扩展E|CJK Unified Ideographs Extension E|2B820..2CEAF|243|同上|
 |中日韩统一表意文字扩展F|CJK Unified Ideographs Extension F|2CEB0..2EBEF|80|文渊字体扩展G源字|
-|中日韩统一表意文字扩展I|CJK Unified Ideographs Extension I|2EBF0..2EE5F|8|同上|
+|中日韩统一表意文字扩展I|CJK Unified Ideographs Extension I|2EBF0..2EE5F|9|同上|
 |中日韩兼容表意文字扩充|CJK Compatibility Ideographs Supplement|2F800..2FA1F|2|同上|
 |中日韩统一表意文字扩展G|CJK Unified Ideographs Extension G|30000..3134F|78|同上|
 |中日韩统一表意文字扩展H|CJK Unified Ideographs Extension H|31350..323AF|24|同上|
 |中日韩统一表意文字扩展J|CJK Unified Ideographs Extension J|323B0..3347F|14|同上|
-|表意文字异体序列|Ideographic Variations Sequences|||6|同上|
-|||**共计**|**29,157**||
+|表意文字异体序列|Ideographic Variations Sequences|||15|同上|
+|||**共计**|**29,167**||
 
 ### 参照字体
 鉴于不同正文字体存在少量的字形差异，本项目使用以下两个来源的字体字形作为参照：
 
-- **主要**：[文渊宋体v1.000](https://github.com/takushun-wu/WenYuanFonts)（字形遵从《通用规范汉字表》所定义字形）
+- **主要**：[文渊宋体v1.110](https://github.com/takushun-wu/WenYuanFonts)（字形遵从《通用规范汉字表》所定义字形）
 - **备考**：[GB/T 22321.1-2025《信息技术 中文编码字符集 汉字48点阵字型 第1部分：宋体》](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=421B9135604C56A2EA1C4396A941CFB4)定义字形（下文简称“GB字形”）
 
 ### 数据格式

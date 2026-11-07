@@ -22,18 +22,18 @@ This project provides a database containing stroke order information for Simplif
 |CJK Unified Ideographs Extension D|2B740..2B81F|17|ditto|
 |CJK Unified Ideographs Extension E|2B820..2CEAF|243|ditto|
 |CJK Unified Ideographs Extension F|2CEB0..2EBEF|80|Extended G-source ideographs in WenYuan Fonts|
-|CJK Unified Ideographs Extension I|2EBF0..2EE5F|8|ditto|
+|CJK Unified Ideographs Extension I|2EBF0..2EE5F|9|ditto|
 |CJK Compatibility Ideographs Supplement|2F800..2FA1F|2|ditto|
 |CJK Unified Ideographs Extension G|30000..3134F|78|ditto|
 |CJK Unified Ideographs Extension H|31350..323AF|24|ditto|
 |CJK Unified Ideographs Extension J|323B0..3347F|14|ditto|
-|Ideographic Variations Sequences|||6|ditto|
-||**Total**|**29,157**||
+|Ideographic Variations Sequences|||15|ditto|
+||**Total**|**29,167**||
 
 ### Reference Fonts
 Given that different regular fonts have minor glyph differences, this project uses the following two sources of font glyphs as references:
 
-- **Primary**: [WenYuan Serif SC v0.905](https://github.com/takushun-wu/WenYuanFonts) [glyphs follow the definition in the _General Standard Chinese Characters Table (aka TGH)_]
+- **Primary**: [WenYuan Serif SC v1.110](https://github.com/takushun-wu/WenYuanFonts) [glyphs follow the definition in the _General Standard Chinese Characters Table (aka TGH)_]
 - **Secondary**: [GB/T 22321.1-2025 Information technology - Chinese coded character set - 48 dot matrix font of Chinese ideogram - Part 1: Song ti (in Chinese)](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=421B9135604C56A2EA1C4396A941CFB4) defined glyphs (hereafter referred to as _GB Glyphs_)
 
 ### Data Format
